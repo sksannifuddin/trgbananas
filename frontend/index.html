@@ -14,15 +14,15 @@
 
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://trg-bananas.netlify.app//">
+<link rel="canonical" href="https://trg-bananas.netlify.app/">
 <meta name="google-site-verification" content="XVxwIEjJJreeBkh-u0QGKb39A7RemYamqdRba-MBk9c" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="TRG Bananas">
 <meta property="og:description" content="Fresh Premium Banana Delivery Platform">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://trg-bananas.netlify.app//">
-<meta property="og:image" content="https://trg-bananas.netlify.app//images/banner.jpg">
+<meta property="og:url" content="https://trg-bananas.netlify.app/">
+<meta property="og:image" content="https://trg-bananas.netlify.app/images/banner.jpg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -689,8 +689,9 @@ function renderProducts(products) {
     <div class="product-card">
       <div class="product-img">
         <img 
-  src="images/${p.image}"" 
-  alt="${p.name}"onerror="this.parentNode.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,#FFF8E1,#FFE566)\'>🍌</div>'">
+  src="images/${p.image}"
+  alt="${p.name}"
+onerror="this.parentNode.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,#FFF8E1,#FFE566)\'>🍌</div>'">
         ${p.isFeatured ? '<span class="product-badge">⭐ Featured</span>' : ''}
         <span class="product-badge" style="left:auto;right:12px;background:var(--yellow);color:#1A1A1A;">${p.category}</span>
       </div>
