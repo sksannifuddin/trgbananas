@@ -688,7 +688,7 @@ function renderProducts(products) {
     <div class="product-card">
       <div class="product-img">
         <img 
-  src="https://trgbananas.onrender.com/images/${p.image}" 
+  src="images/${p.image}"" 
   alt="${p.name}"onerror="this.parentNode.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,#FFF8E1,#FFE566)\'>🍌</div>'">
         ${p.isFeatured ? '<span class="product-badge">⭐ Featured</span>' : ''}
         <span class="product-badge" style="left:auto;right:12px;background:var(--yellow);color:#1A1A1A;">${p.category}</span>
@@ -739,7 +739,7 @@ function updateCartUI() {
   const delivery = subtotal > 500 ? 0 : 40;
   el.innerHTML = cart.map(i => `
     <div class="cart-item">
-      <img class="cart-item-img" src="https://trgbananas.onrender.com/images/${i.image}" onerror="this.src='';this.style.background='#FFE566';this.style.display='flex';this.style.alignItems='center';this.style.justifyContent='center';this.innerHTML='🍌'">
+      <img class="cart-item-img" src="images/${i.image}" onerror="this.src='';this.style.background='#FFE566';this.style.display='flex';this.style.alignItems='center';this.style.justifyContent='center';this.innerHTML='🍌'">
       <div class="cart-item-info">
         <div class="cart-item-name">${i.name}</div>
         <div class="cart-item-price">₹${i.price * i.qty}</div>
